@@ -1,6 +1,6 @@
 this is my note in developing toefl-jetstram, write in right Indonesian language
 1.  Membuat navigasi atau UI desain untuk mengelola status dari kelas toefl
-2.  Mencari cara supaya database terupdate secara realtime pada tabel kelas, untuk mengecek status dan countdown waktu pelaksanaan dan pendaftaran.
-    pakai livewire polling atau laravel pusher
+2.  Mencari cara supaya database terupdate secara realtime pada tabel kelas, untuk mengecek status dan countdown waktu pelaksanaan dan pendaftaran di hlm index 
+    kelas. pakai livewire polling atau laravel pusher
 3.  Memahami lebih lanjut tentang laravel autentikasi dan authorisasi
 4.  Selesaikan semuanya sebelum tanggal 21 Agustus!!
