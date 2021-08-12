@@ -1,2 +1,2 @@
 # daily-note
-just for my diary, plan, and dream
+just for my diary, plans, and dreams
