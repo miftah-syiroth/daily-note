@@ -4,7 +4,9 @@ this is my note in developing toefl-jetstram, write in right Indonesian language
     kelas. pakai livewire polling atau laravel pusher
 3.  Memahami lebih lanjut tentang laravel autentikasi dan authorisasi
 4.	perhatikan hal ini dalam proses pengerjaan soal= 
-	a)	peserta hanya bisa mendaftar satu kelas dan mengerjakan satu soal, akun yg kadaluwarsa tidak bisa digunakan lagi, selama berapa hari?
-	b)	perhatikan pengerjaan soal jika koneksi mati atau problem lainnya...
-	c) 
+	a)peserta hanya bisa mendaftar satu kelas dan mengerjakan satu soal, akun yg kadaluwarsa tidak bisa digunakan lagi, selama berapa hari?
+	b)perhatikan pengerjaan soal jika koneksi mati atau problem lainnya...
+        c)https://smartcitiesny.com/program/
+5. tabel kelas pada homepage dibuat realtime update untuk kapasitas  peserta dan kadaluwarsa
+6. ada tiga role yaitu = GUEST, PARTICIPANT, ADMIN
 X.  Selesaikan semuanya sebelum tanggal 21 Agustus!!
