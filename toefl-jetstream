@@ -14,4 +14,12 @@ X.  Selesaikan semuanya sebelum tanggal 21 Agustus!!
 
 // KETINGGALAN
 1. URL redirect setelah login dan register di sesuaikan dengan role user [V}
-2. 
+2. cek ketika peserta 0 pekerjaan. 
+	- akan menuju section 1 soal nomor 1. dengan navigasi (V)
+	- menuju section 1 soal no 1. dgn url (V)
+3. peserta meninggalkan soal dgn sisa soal dan sisa waktu
+	- menuju section 1 dgn soal no2. navigasi (V)
+	- menuju sec 1 dgn soal no 2. url (V). audio tdk autoplay (X)
+4. peserta meninggalkan soal dgn sisa soal dan waktu habis
+	- ketika waktu habis, redirect ke section 2 no 1 (V)
+	- ketika start ulang, redirect ke section 2 no 1 (V)
