@@ -1,17 +1,3 @@
-this is my note in developing toefl-jetstram, write in right Indonesian language
-1.  Membuat navigasi atau UI desain untuk mengelola status dari kelas toefl
-2.  Mencari cara supaya database terupdate secara realtime pada tabel kelas, untuk mengecek status dan countdown waktu pelaksanaan dan pendaftaran di hlm index 
-    kelas. pakai livewire polling atau laravel pusher
-3.  Memahami lebih lanjut tentang laravel autentikasi dan authorisasi
-4.	perhatikan hal ini dalam proses pengerjaan soal= 
-	a)peserta hanya bisa mendaftar satu kelas dan mengerjakan satu soal, akun yg kadaluwarsa tidak bisa digunakan lagi, selama berapa hari?
-	b)perhatikan pengerjaan soal jika koneksi mati atau problem lainnya...
-        c)https://smartcitiesny.com/program/
-5. tabel kelas pada homepage dibuat realtime update untuk kapasitas  peserta dan kadaluwarsa
-6. ada tiga role yaitu = GUEST, PARTICIPANT, ADMIN
-X.  Selesaikan semuanya sebelum tanggal 21 Agustus!!
-
-
 // KETINGGALAN
 1. URL redirect setelah login dan register di sesuaikan dengan role user [V}
 2. cek ketika peserta 0 pekerjaan. 
@@ -23,3 +9,10 @@ X.  Selesaikan semuanya sebelum tanggal 21 Agustus!!
 4. peserta meninggalkan soal dgn sisa soal dan waktu habis
 	- ketika waktu habis, redirect ke section 2 no 1 (V)
 	- ketika start ulang, redirect ke section 2 no 1 (V)
+5. peserta memiliki status, gunakan saja permission, sehingga terdapat perbedaan permission dalam kasus:
+	- baru mendaftar dan menunggu acc dari admin
+	- baru mendaftar dan ditolak oleh admin
+	- sudah diacc admin dan menunggu waktu pengerjaan soal
+	- sudah diacc admin dan telah waktunya pengerjaan soal
+	- selesai mengerjakan soal (selesai atau kehabisan waktu) dan melihat skor sementara dan sertifikat. 
+	
