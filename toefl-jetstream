@@ -10,9 +10,9 @@
 	- ketika waktu habis, redirect ke section 2 no 1 (V)
 	- ketika start ulang, redirect ke section 2 no 1 (V)
 5. peserta memiliki status, gunakan saja permission, sehingga terdapat perbedaan permission dalam kasus:
-	- baru mendaftar dan menunggu acc dari admin
-	- baru mendaftar dan ditolak oleh admin
-	- sudah diacc admin dan menunggu waktu pengerjaan soal
+	- baru mendaftar dan menunggu acc dari admin (view status)
+	- baru mendaftar dan ditolak oleh admin ()
+	- sudah diacc admin dan menunggu waktu pengerjaan soal (do toefl)
 	- sudah diacc admin dan telah waktunya pengerjaan soal
-	- selesai mengerjakan soal (selesai atau kehabisan waktu) dan melihat skor sementara dan sertifikat. 
+	- selesai mengerjakan soal (selesai atau kehabisan waktu) dan melihat skor sementara dan sertifikat. ()
 	
