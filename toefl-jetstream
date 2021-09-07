@@ -8,10 +8,10 @@
 	c. card list, fun mount dan polling. (V)
 3. pada hlm admin jgn tampilkan button aksi pendaftaran jika now > batas pendaftaran (V)
 4. buat realtime check status peserta pada kasus batas akhir pelaksanaan (V)
-5. buat filter toefl
-6. buat filter kelas pada:
-	a. card list
-	b. index kelas hlm admin
+5. buat filter toefl (V)
+6. buat filter kelas pada: (V)
+	a. card list (V)
+	b. index kelas hlm admin (V)
 7. buat fiter peserta
 8. buat fitur download atau view receipt
 9. buat fitur download atau view sertifikat
