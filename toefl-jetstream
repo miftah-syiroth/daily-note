@@ -1,18 +1,17 @@
-// KETINGGALAN
-1. URL redirect setelah login dan register di sesuaikan dengan role user [V}
-2. cek ketika peserta 0 pekerjaan. 
-	- akan menuju section 1 soal nomor 1. dengan navigasi (V)
-	- menuju section 1 soal no 1. dgn url (V)
-3. peserta meninggalkan soal dgn sisa soal dan sisa waktu
-	- menuju section 1 dgn soal no2. navigasi (V)
-	- menuju sec 1 dgn soal no 2. url (V). audio tdk autoplay (X)
-4. peserta meninggalkan soal dgn sisa soal dan waktu habis
-	- ketika waktu habis, redirect ke section 2 no 1 (V)
-	- ketika start ulang, redirect ke section 2 no 1 (V)
-5. peserta memiliki status, gunakan saja permission, sehingga terdapat perbedaan permission dalam kasus:
-	- baru mendaftar dan menunggu acc dari admin (view status)
-	- baru mendaftar dan ditolak oleh admin ()
-	- sudah diacc admin dan menunggu waktu pengerjaan soal (do toefl)
-	- sudah diacc admin dan telah waktunya pengerjaan soal
-	- selesai mengerjakan soal (selesai atau kehabisan waktu) dan melihat skor sementara dan sertifikat. ()
+// yg belum nih, HAMPI SELESAI
+1. cek status kelas secara realtime, yakni pada kondisi 
+	a. pendaftaran ditutup otomatis ketika melewatai waktu pendaftaran/kuota penuh
+	b. kelas selesai jika melewati batas akhir pelaksanaan.
+2. no 1. terapkan pada
+	a. index kelas hlm admin, func mount
+	b. show kelas hlm admin, fun mount dan polling
+	c. card list, fun mount dan polling.
+3. pada hlm admin jgn tampilkan button aksi pendaftaran jika now > batas pendaftaran
+4. buat realtime check status peserta pada kasus batas akhir pelaksanaan
+5. buat navigasi toefl
+6. buat navigasi kelas pada:
+	a. card list
+	b. index kelas hlm admin
+7. buat navigasi peserta
+8. 
 	
