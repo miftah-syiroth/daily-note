@@ -7,7 +7,7 @@
 	b. show kelas hlm admin, fun mount dan polling
 	c. card list, fun mount dan polling.
 3. pada hlm admin jgn tampilkan button aksi pendaftaran jika now > batas pendaftaran
-4. buat realtime check status peserta pada kasus batas akhir pelaksanaan
+4. buat realtime check status peserta pada kasus batas akhir pelaksanaan (V)
 5. buat navigasi toefl
 6. buat navigasi kelas pada:
 	a. card list
