@@ -12,10 +12,11 @@
 6. buat filter kelas pada: (V)
 	a. card list (V)
 	b. index kelas hlm admin (V)
-7. buat fiter peserta
-8. buat fitur download atau view receipt
-9. buat fitur download atau view sertifikat
-10. buat fitur cetak tabel peserta
+7. buat fiter peserta (V)
+8. buat realtime validasi show user pada hlm admin (V)
+9. buat fitur download atau view receipt (V)
+10. buat fitur download atau view sertifikat (V)
+11. buat fitur cetak tabel peserta
 	a. index
 	b. kelas
 	c. berdasarkan filter
