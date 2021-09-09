@@ -16,7 +16,6 @@
 8. buat realtime validasi show user pada hlm admin (V)
 9. buat fitur download atau view receipt (V)
 10. buat fitur download atau view sertifikat (V)
-11. buat fitur cetak tabel peserta
-	a. index
-	b. kelas
-	c. berdasarkan filter
+11. buat fitur cetak tabel peserta (V)
+	a. index (V)
+	b. kelas (V)
