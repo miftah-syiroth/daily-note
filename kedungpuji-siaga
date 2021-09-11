@@ -1,7 +1,7 @@
 pada person terdapat properti (UU 2006 No. 23)
   1. nama lengkap
   2. NIK
-  3. No KK
+  3. No KK (keluarga_id)
   4. jenis kelamin (_)
   5. tempat lahir
   6. tanggal lahir
