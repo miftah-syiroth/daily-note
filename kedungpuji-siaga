@@ -12,4 +12,14 @@ pada person terdapat properti (UU 2006 No. 23)
   11. cacat fisik dan/atau mental (_)
   12. pendidikan terakhir (_)
   13. jenis pekerjaan (_)
-  14. 
+  14. NIK ibu kandung (penduduk_id)
+  15. NIK ayah (penduduk_id)
+  16. alamat sekarang
+  17. kepemilikian akta kelahiran (_)
+  18. no akta kelahiran/surat kenal lahir
+  19. kepemilikan akta perkawinan/buku nikah
+  20. nomor akta perkawinan/buku nikah;
+  21. tanggal perkawinan
+  22. kepemilikan akta perceraian;
+  23. nomor akta perceraian/surat cerai;
+  24. tanggal perceraian.
