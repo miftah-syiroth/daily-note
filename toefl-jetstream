@@ -1,21 +1,3 @@
-// yg belum nih, HAMPI SELESAI
-1. cek status kelas secara realtime, yakni pada kondisi (V)
-	a. pendaftaran ditutup otomatis ketika melewatai waktu pendaftaran/kuota penuh (V)
-	b. kelas selesai jika melewati batas akhir pelaksanaan. (V)
-2. no 1. terapkan pada (V)
-	a. index kelas hlm admin, func mount (V)
-	b. show kelas hlm admin, fun mount dan polling (V)
-	c. card list, fun mount dan polling. (V)
-3. pada hlm admin jgn tampilkan button aksi pendaftaran jika now > batas pendaftaran (V)
-4. buat realtime check status peserta pada kasus batas akhir pelaksanaan (V)
-5. buat filter toefl (V)
-6. buat filter kelas pada: (V)
-	a. card list (V)
-	b. index kelas hlm admin (V)
-7. buat fiter peserta (V)
-8. buat realtime validasi show user pada hlm admin (V)
-9. buat fitur download atau view receipt (V)
-10. buat fitur download atau view sertifikat (V)
-11. buat fitur cetak tabel peserta (V)
-	a. index (V)
-	b. kelas (V)
+1. testing local
+2. hosting
+3. buat user acceptance
