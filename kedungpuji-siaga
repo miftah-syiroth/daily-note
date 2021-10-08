@@ -1,3 +1,1 @@
-ketika menginput penduduk baru yang wanita menikah, ketika menginput status pernikahan dan pasangan, maka status pernikahan pada baris pasangannya jg harus disesuaikan. 
-caranya adalah jangan buat pasangan pada pembuatan penduduk baru. karena normlanya penduduk dulu yang ada baru pasangan, tidak mungkin baru lahir sudah punya pasangan.
-buat kolom marital_status_id pada tabel couple, lalu pada tabel people hapus saja. jadi ketika dia ga punya pasangan, maka status menjadi "belum kawin"
+edit penduduk
