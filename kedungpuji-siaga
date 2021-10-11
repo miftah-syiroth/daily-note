@@ -5,3 +5,17 @@ oktober 11 2021
 4. terdapat penduduk yang belum tercatat pada KK manapun, dia hendak ditambahkan pada sebuah keluarga. maka querynya adalah cari penduduk yang ga memiliki relasi dengan keluarga dan status anggotanya bukan kepala keluarga (V)
 5. kasus merubah atau menambahkan anggota keluarga dimana person tersebut sudah memiliki family_id sebelumnya, dgn kata lain hendak memindahkan seseorang dari anggota sebuah keluarga menjadi anggota keluarga yang lain. kasus ini bisa terjadi seperti anak menikah, jka laki2 menjadi kelapa keluarga, wanita menjadi istri kepala keluarga, atau jika kepala keluarga meninggal maka istri akan menggantikan menjadi kepala keluarga.
 6. pada kasus no 5. 
+
+
+bagaimana cara mengubah keanggotaan seseorang dari sebuah keluarga ke keluarga yang lain
+  - entah bagaimana dia ingin pindah menjadi anak org lain
+baiamna cara mengubah seseorang dari anggot sebuah keluarga menjadi kepala keluarga pada keluarga tersebut
+  - seorang istri dicerai dan menggantikan status kepala keluarga si suami
+baiamna cara mengubah seseorang dari anggot sebuah keluarga menjadi kepala keluarga pada keluarga yang lain yang telah ada
+  - seorang anak laki2 menikahi janda beranak sehingga menggantikan status kepala keluarga si janda
+baiamna cara mengubah seseorang dari anggot sebuah keluarga menjadi kepala keluarga baru
+  - seorang anak menikah dan menjadi suami dari keluaga baru kecilnya
+baiamna cara mengubah seseorang dari kepala keluarga sebuah keluarga menjadi kepala keluarga yang lain
+  - seorang suami cerai dan menikah lagi dengan seorang janda, sehingga menggantikan status kepala keluarga dari si janda
+baiamna cara mengubah seseorang dari kepala keluarga sebuah keluarga menjadi kepala keluarga baru
+  - seorang suami menjadi kepala keluarga, lalu cerai dan menikah kembali, menjadi kepala keluarga di keluarga baru
