@@ -9,8 +9,10 @@ oktober 11 2021
 
 bagaimana cara mengubah keanggotaan seseorang dari sebuah keluarga ke keluarga yang lain
   - entah bagaimana dia ingin pindah menjadi anak org lain
+  = ini tinggal diedit aja pada hlm edit person, arahin ke family_id yang sesuai dan status anggotanya
 baiamna cara mengubah seseorang dari anggot sebuah keluarga menjadi kepala keluarga pada keluarga tersebut
   - seorang istri dicerai dan menggantikan status kepala keluarga si suami
+  = 
 baiamna cara mengubah seseorang dari anggot sebuah keluarga menjadi kepala keluarga pada keluarga yang lain yang telah ada
   - seorang anak laki2 menikahi janda beranak sehingga menggantikan status kepala keluarga si janda
 baiamna cara mengubah seseorang dari anggot sebuah keluarga menjadi kepala keluarga baru
@@ -19,3 +21,8 @@ baiamna cara mengubah seseorang dari kepala keluarga sebuah keluarga menjadi kep
   - seorang suami cerai dan menikah lagi dengan seorang janda, sehingga menggantikan status kepala keluarga dari si janda
 baiamna cara mengubah seseorang dari kepala keluarga sebuah keluarga menjadi kepala keluarga baru
   - seorang suami menjadi kepala keluarga, lalu cerai dan menikah kembali, menjadi kepala keluarga di keluarga baru
+
+gini aja apa ya...
+* ketika ada perpindahan anggota keluarga ke keluarga lain, cukup pindahkan saja personalnya ke family_id lain menggunakan fitur edit person
+* ketika ada perubahan status dari anggot menjadi kepala keluarga, maka itu adalah pembuatan keluarga baru... ga ada masalah
+* ketika ada perubahan kepala keluara disebabkan (cerai, mati), lebih baik hapus saja keluarganya, input keluarga ulang sesuai yang diperlukan
