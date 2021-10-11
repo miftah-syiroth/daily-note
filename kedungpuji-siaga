@@ -1,6 +1,7 @@
 oktober 11 2021
--tabel penduduk indeks tampilkan saja semua yang paling dibutuhkan
-- buat view secara terpisah saja, ga perlu digabung2 create dan edit dalam satu page.
-- pada show family, tampilkan data keluarga (berdasarkan kepala keluarga), tampilkan data personal anggoa keluarga seprti pada tabel penduduk index, V
-- terdapat penduduk yang belum tercatat pada KK manapun, dia hendak ditambahkan pada sebuah keluarga. maka querynya adalah cari penduduk yang ga memiliki relasi dengan keluarga dan status anggotanya bukan kepala keluarga (V)
-- kasus merubah atau menambahkan anggota keluarga dimana person tersebut sudah memiliki family_id sebelumnya, dgn kata lain hendak 
+1. tabel penduduk indeks tampilkan saja semua yang paling dibutuhkan
+2. buat view secara terpisah saja, ga perlu digabung2 create dan edit dalam satu page.
+3. pada show family, tampilkan data keluarga (berdasarkan kepala keluarga), tampilkan data personal anggoa keluarga seprti pada tabel penduduk index, V
+4. terdapat penduduk yang belum tercatat pada KK manapun, dia hendak ditambahkan pada sebuah keluarga. maka querynya adalah cari penduduk yang ga memiliki relasi dengan keluarga dan status anggotanya bukan kepala keluarga (V)
+5. kasus merubah atau menambahkan anggota keluarga dimana person tersebut sudah memiliki family_id sebelumnya, dgn kata lain hendak memindahkan seseorang dari anggota sebuah keluarga menjadi anggota keluarga yang lain. kasus ini bisa terjadi seperti anak menikah, jka laki2 menjadi kelapa keluarga, wanita menjadi istri kepala keluarga, atau jika kepala keluarga meninggal maka istri akan menggantikan menjadi kepala keluarga.
+6. pada kasus no 5. 
