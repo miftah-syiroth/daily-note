@@ -26,3 +26,26 @@ gini aja apa ya...
 * ketika ada perpindahan anggota keluarga ke keluarga lain, cukup pindahkan saja personalnya ke family_id lain menggunakan fitur edit person
 * ketika ada perubahan status dari anggot menjadi kepala keluarga, maka itu adalah pembuatan keluarga baru... ga ada masalah
 * ketika ada perubahan kepala keluara disebabkan (cerai, mati), lebih baik hapus saja keluarganya, input keluarga ulang sesuai yang diperlukan
+
+12 okt 2021
+1. fitur softdelete person untuk kematian -> tidak bisa, karena person harus berelasi dgn banyak tabel lain, lebih baik tambahkan column is_alive dan dead_at
+2. 
+
+bagaimana jika terdapat table intermediate antara families dan people, saya bingung jika terdapat kematian, bakal rusak tuh relasi kekeluargaan
+1. yg ditulis pada table intermediate cukup anggotanya aja? atau sama kepalanya juga? sama kepalanya aja deh!
+2. membuat keluarga. pastika kepala keluarga tidk terdaftar pada keluarga yang lain. simpan person_id pada tabel families utk relasi 1 to 1 kepala keluarga. sync person ke satu family saja dan tambahkan status keanggotaan (V)
+3. tambah anggota. pastikan dia ga punya relasi apapun dgn keluarga lain. sync person ke satu family dan tambahkan status keanggotaan (V)
+4. hapus anggota, detach saja person ke id family tsb (V)
+5. anggota mati. detach saja
+6. kepala keluarga mati. 
+    -kalau lgsg klik mati, jalankan fungsi family->people()->detach() utk hapus semua row di intermediate table, lalu hapus keluarga tersebut. buat ulang dengan kepala keluarga yg baru.
+    -kalau edi kepala keluarga, pastikan calon kepala keluarga tidk berelasi dgn keluarga manapun/detach dulu dgn button jika dia anggota sebuah keluarga, setelah diinputkan, detach row kepala keluarga sebelumnya di table intermediate, ganti kepala keluarga di tabel keluarga dan sync perso ke family tsb dgn status kepala keluarga
+7. anggot keluarga menjadi anggota keluarga yg lain, detach dulu pd keluarga sebelumnya, lalu masukkan lewat form tambah anggota keluarga yg dituju.
+8. kepala keluarga menjadi anggota keluarga
+    - hapus dulu keluarganya, atau
+    - ganti dulu kepala keluarganya
+9. kepala keluarga menjadi kepala keluarga yg lain
+    - hapus dulu keluarganya, atau
+    - ganti dulu kepala keluarganya
+
+pada proses update person, perhatikan input pencarian ayah dan ibu, jika sudah ada dan request null, jgn ubah jd null
