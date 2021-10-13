@@ -49,3 +49,13 @@ bagaimana jika terdapat table intermediate antara families dan people, saya bing
 10. edit kepala keluarga (VV)
 
 pada proses update person, perhatikan input pencarian ayah dan ibu, jika sudah ada dan request null, jgn ubah jd null (VV)
+
+13 Okt 2021
+1. ketika mematikan person, maka cek juga relasi dengan model lainnya
+  - jika dia kepala keluarga, maka detach semua anggotanya, dan hapus keluarga tsb
+  - jka dia anggota keluarga, maka detach dia dari keluarga tsb
+  - jika dia punya pasangan maka set is_still_married menjadi false
+2. pada proses pencarian leader atau member family, pastikan person tsb tidak mati
+3. pada proses pencarian istri dan suami, pastikan juga tidak mati
+4. tabel penduduk jgn menampilkan org mati
+5. tabel couple jgn menamilkan pasangan cerai
