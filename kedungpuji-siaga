@@ -55,7 +55,11 @@ pada proses update person, perhatikan input pencarian ayah dan ibu, jika sudah a
   - jika dia kepala keluarga, maka detach semua anggotanya, dan hapus keluarga tsb
   - jka dia anggota keluarga, maka detach dia dari keluarga tsb
   - jika dia punya pasangan maka set is_still_married menjadi false
-2. pada proses pencarian leader atau member family, pastikan person tsb tidak mati
-3. pada proses pencarian istri dan suami, pastikan juga tidak mati
+2. pada proses pencarian leader dan member family, pastikan person tsb tidak mati (VV)
+3. pada proses pencarian istri dan suami, pastikan juga tidak mati (VV)
 4. tabel penduduk jgn menampilkan org mati
 5. tabel couple jgn menamilkan pasangan cerai
+
+14 Okt 2021
+1. pertimbangkan penggunaan is_still_married pada tabel couples, apakah bisa digantikan dgn status kawin dari istri saja. --> ini terganung ketika ada kematian/perceraian apakah dihapus saja row couplenya? atau set cerai saja. jika dihapus maka bisa menggunakan status kawin dari istri, karena jika istri/suami menikah lagi, maka akan menggunakan row baru. hal buruknya adalah semua record laporan akan terhapus ttg KB. utk sementara set cerai saja di row couplenya
+2. 
