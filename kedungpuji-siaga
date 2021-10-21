@@ -68,3 +68,4 @@ pada proses update person, perhatikan input pencarian ayah dan ibu, jika sudah a
 1. bedakan fitur tambah penduduk antara kelahiran baru dan pendatang
 2. buat kolom visited_at dan buat batasan waktu pada input laporan kelas ibu hamil
 3. buat batasan tidak boleh input hpht, kelahiran, dll lebih dari hari sekarang
+4. bagaimana jika bayinya lebih dari satu, lebih baik buat kehamilan baru, jangan batasi pencarian ibu
