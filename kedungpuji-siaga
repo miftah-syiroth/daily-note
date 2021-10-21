@@ -63,3 +63,8 @@ pada proses update person, perhatikan input pencarian ayah dan ibu, jika sudah a
 14 Okt 2021
 1. pertimbangkan penggunaan is_still_married pada tabel couples, apakah bisa digantikan dgn status kawin dari istri saja. --> ini terganung ketika ada kematian/perceraian apakah dihapus saja row couplenya? atau set cerai saja. jika dihapus maka bisa menggunakan status kawin dari istri, karena jika istri/suami menikah lagi, maka akan menggunakan row baru. hal buruknya adalah semua record laporan akan terhapus ttg KB. utk sementara set cerai saja di row couplenya
 2. 
+
+21 Otk 2021
+1. bedakan fitur tambah penduduk antara kelahiran baru dan pendatang
+2. buat kolom visited_at dan buat batasan waktu pada input laporan kelas ibu hamil
+3. 
