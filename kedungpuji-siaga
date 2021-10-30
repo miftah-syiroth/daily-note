@@ -73,3 +73,4 @@ pada proses update person, perhatikan input pencarian ayah dan ibu, jika sudah a
 # REFACTORY
 1. input pencarian orang tua pada tambah pendatang dibebaskan dar kematian dan kepindahan (V)
 2. ingat batasan orang mati dan kepindahan desa
+3. pada kegiatan edit person yg mana pindah atau mati, jika punya pasangan maka hapus.
