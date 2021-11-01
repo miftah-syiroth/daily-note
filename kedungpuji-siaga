@@ -76,3 +76,4 @@ pada proses update person, perhatikan input pencarian ayah dan ibu, jika sudah a
 3. pada kegiatan edit person yg mana pindah atau mati, jika punya pasangan maka hapus.
 4. untuk urusan KB. apa tujuan KB? jumlah anak berdasarkan dari keluarga atau istri atau suami?
 5. pada aktivitas input laporan kehamilan, nifas.. CHECK karena form create dan request dipassing lewat url, jgn sampai input dua kali pada periode yg sama
+6. pastikan unutk input BB pada bayi pakai kg atau gr
