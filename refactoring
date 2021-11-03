@@ -3,8 +3,17 @@ modul edit profile masing-masing pengguna (V)
 konten halaman url / sebelum login dashboard
 konten halaman dashboard
 buat fitur filter terhadap data table penduduk, nama, rt/rw, umur (V)
-pada fitur edit pindah /mati penduduk, hapus data terkait yaitu pasangan dan keluarga
+pada fitur edit pindah /mati penduduk, perhatikan relasi apa saja yang bergantung
+saat menambahkan penduduk kelahiran baru, apa batasannya, bagaimana jika bayi mati
 
 
-
-request()->routeIs('participants.*')
+person menjadi parent dari model :
+1. motherChildren = ibu dari keturunannya // jika ibu dihapus, maka anak tidak dihapus, cukup buat null pada mother_id
+2. fatherChildren = ayah dari keturunannya, jika ayah dihapus, maka anak tidak dihapus, cukup buat null pada father_id
+3. ledFamily = kepala keluarga dari keluarga yg dipimpinnya  --> family, keluarga dan anggota yg terbentuk dari kepala keluarga tsb. // jika kepela keluarga dihapus, maka hapus tabel pivot dan tabel keluarga.
+3.1. family = sebagai anggota keluarga, // jika seorang anggota selain kepala keluarga dihapus dari keanggotaan, maka tidak ada pengaruh, cukup detach saja
+4. wifes = suami dari istri-istrinya --> keluarga berencama, // jika suami dihapus, maka semua data pasangan dan keluarga berencana dihapus
+5. husband = istri dari satu suaminya --> keluarga berencana,// jika istri dihapus, maka hanya hapus data pasangan tersebut dan keluarga berencana relate ke istri
+6. pregnancies = ibu dari kandungan-kandungannya, --> puerperals, nifas akibat kehamilan, // jika ibu dihapus, maka hapus semua data pregnancies dan puerperals yg terkait
+7. childbirth = orang yang telah dilahirkan dari kehamilan, // jika org dihapus, childbrith tidak dihapus, cukup buat null pada person_id
+8. posyandu = anggota dari posyandu balita, // jika orang dihapus, hapus juga data posyandu yang menyertainya
