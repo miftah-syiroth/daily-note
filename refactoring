@@ -6,7 +6,7 @@ buat fitur filter terhadap data table penduduk, nama, rt/rw, umur (V)
 pada fitur edit pindah /mati penduduk, perhatikan relasi apa saja yang bergantung
 saat menambahkan penduduk kelahiran baru, apa batasannya, bagaimana jika bayi mati
 
-pasangan, nama istri, nama suami, alamat istri, usia subur, usia tidak subur, semua
+nama ibu, rt, rw, hpth, childbirthdate, jenis kelamin bayi, nama bayi jika ada
 
 
 person menjadi parent dari model :
