@@ -6,7 +6,7 @@ buat fitur filter terhadap data table penduduk, nama, rt/rw, umur (V)
 pada fitur edit pindah /mati penduduk, perhatikan relasi apa saja yang bergantung
 saat menambahkan penduduk kelahiran baru, apa batasannya, bagaimana jika bayi mati
 
-nama ibu, rt, rw, hpth, childbirthdate, jenis kelamin bayi, nama bayi jika ada
+
 
 
 person menjadi parent dari model :
@@ -16,6 +16,14 @@ person menjadi parent dari model :
 3.1. family = sebagai anggota keluarga, // jika seorang anggota selain kepala keluarga dihapus dari keanggotaan, maka tidak ada pengaruh, cukup detach saja
 4. wifes = suami dari istri-istrinya --> keluarga berencama, // jika suami dihapus, maka semua data pasangan dan keluarga berencana dihapus
 5. husband = istri dari satu suaminya --> keluarga berencana,// jika istri dihapus, maka hanya hapus data pasangan tersebut dan keluarga berencana relate ke istri
-6. pregnancies = ibu dari kandungan-kandungannya, --> puerperals, nifas akibat kehamilan, // jika ibu dihapus, maka hapus semua data pregnancies dan puerperals yg terkait
+6. pregnancies = ibu dari kandungan-kandungannya, -->--> puerperals dan prenatal_class nifas akibat kehamilan, // jika ibu dihapus, maka hapus semua data pregnancies dan puerperals yg terkait
 7. childbirth = orang yang telah dilahirkan dari kehamilan, // jika org dihapus, childbrith tidak dihapus, cukup buat null pada person_id
 8. posyandu = anggota dari posyandu balita, // jika orang dihapus, hapus juga data posyandu yang menyertainya
+
+
+antropometris tidak bisa dihapus, dihapus melalui parentnya
+couples jika dihapus maka akan menghapu data keluarga berencana
+neonatuses tidak bisa dihapus, dihapus melalui parent posyandu->person
+posyandu jika dihapus akan menghapus antropometris dan neonatuses
+person_has_family dihapus melalui parent
+pregnancies jika dihapus akan menghapus prenatal_class, puerperal, puerperal_class, pregnancy_has_baby_condition, puerperal_has_*, 
