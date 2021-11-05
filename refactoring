@@ -21,9 +21,14 @@ person menjadi parent dari model :
 8. posyandu = anggota dari posyandu balita, // jika orang dihapus, hapus juga data posyandu yang menyertainya
 
 
-antropometris tidak bisa dihapus, dihapus melalui parentnya
-couples jika dihapus maka akan menghapu data keluarga berencana
-neonatuses tidak bisa dihapus, dihapus melalui parent posyandu->person
-posyandu jika dihapus akan menghapus antropometris dan neonatuses
-person_has_family dihapus melalui parent
-pregnancies jika dihapus akan menghapus prenatal_class, puerperal, puerperal_class, pregnancy_has_baby_condition, puerperal_has_*, 
+antropometris tidak bisa dihapus, dihapus melalui parentnya (v)
+couples jika dihapus maka akan menghapu data keluarga berencana (V)
+neonatuses tidak bisa dihapus, dihapus melalui parent posyandu->person (V)
+posyandu jika dihapus akan menghapus antropometris dan neonatuses (V)
+pregnancies jika soft delete akan menghapus prenatal_class, puerperal, puerperal_class, (V)
+pregnancy jika forcedelete maka akan menghapus juga  pregnancy_has_baby_condition, puerperal_has_*, (V)
+puerperal dihapus maka akan menghapus puerperal_class (V)
+saat couple restore, cek apakah istri punya pasangan atau tidak, cegah jika punya 
+saat family restore, cek apakah kepala keluarga menjadi anggota keluarga lainnya atau menjadi kepala keluarga lainnya. jika iya cegah (V)
+
+tambahkan withTrashed pada helper getDeleteData setelah semua fitur selesai/model use SoftDelete
