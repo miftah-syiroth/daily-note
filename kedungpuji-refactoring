@@ -32,3 +32,18 @@ saat couple restore, cek apakah istri punya pasangan atau tidak, cegah jika puny
 saat family restore, cek apakah kepala keluarga menjadi anggota keluarga lainnya atau menjadi kepala keluarga lainnya. jika iya cegah (V)
 
 tambahkan withTrashed pada helper getDeleteData setelah semua fitur selesai/model use SoftDelete (V)
+
+
+DELETE CASE TESTING
+simbol: 1,2,n++ (relasi yang akan ditest), a,b,c (kombinasi dari case hapus dan relasi), ? (harapan), = (hasil), ->(perubahan)
+
+1. relasi orang tua terhadap anak
+  a. softDelete ayah/ibu
+    ?. nama org tua akan hilang pada detil penduduk anak
+    =. nama ortu hilang pada ui anak (V)
+  b. restore ayah/ibi
+    ?. nama ortu akan muncul pada ui anak
+    =. nama ortu muncul (V)
+  c. forceDel ortu
+    ?. kolom mother_id/father_id pada foreign_key akan null
+    =. mother_id/father_id bernilai null (V)
