@@ -1,23 +1,23 @@
 penyesuaian navbar, fitur logout, dan edit password (V)
 modul edit profile masing-masing pengguna (V)
-konten halaman url / sebelum login dashboard
+konten halaman url / sebelum login dashboard (V)
 konten halaman dashboard
 buat fitur filter terhadap data table penduduk, nama, rt/rw, umur (V)
-pada fitur edit pindah /mati penduduk, perhatikan relasi apa saja yang bergantung
+pada fitur edit pindah /mati penduduk, perhatikan relasi apa saja yang bergantung (V)
 saat menambahkan penduduk kelahiran baru, apa batasannya, bagaimana jika bayi mati
 
 
 
 
 person menjadi parent dari model :
-1. motherChildren = ibu dari keturunannya // jika ibu dihapus, maka anak tidak dihapus, cukup buat null pada mother_id
-2. fatherChildren = ayah dari keturunannya, jika ayah dihapus, maka anak tidak dihapus, cukup buat null pada father_id
-3. ledFamily = kepala keluarga dari keluarga yg dipimpinnya  --> family, keluarga dan anggota yg terbentuk dari kepala keluarga tsb. // jika kepela keluarga dihapus, maka hapus tabel pivot dan tabel keluarga.
-3.1. family = sebagai anggota keluarga, // jika seorang anggota selain kepala keluarga dihapus dari keanggotaan, maka tidak ada pengaruh, cukup detach saja
-4. wifes = suami dari istri-istrinya --> keluarga berencama, // jika suami dihapus, maka semua data pasangan dan keluarga berencana dihapus
-5. husband = istri dari satu suaminya --> keluarga berencana,// jika istri dihapus, maka hanya hapus data pasangan tersebut dan keluarga berencana relate ke istri
-6. pregnancies = ibu dari kandungan-kandungannya, -->--> puerperals dan prenatal_class nifas akibat kehamilan, // jika ibu dihapus, maka hapus semua data pregnancies dan puerperals yg terkait
-7. childbirth = orang yang telah dilahirkan dari kehamilan, // jika org dihapus, childbrith tidak dihapus, cukup buat null pada person_id
+1. motherChildren = ibu dari keturunannya // jika ibu dihapus, maka anak tidak dihapus, cukup buat null pada mother_id (V)
+2. fatherChildren = ayah dari keturunannya, jika ayah dihapus, maka anak tidak dihapus, cukup buat null pada father_id (V)
+3. ledFamily = kepala keluarga dari keluarga yg dipimpinnya  --> family, keluarga dan anggota yg terbentuk dari kepala keluarga tsb. // jika kepela keluarga dihapus, maka hapus tabel pivot dan tabel keluarga. (V)
+3.1. family = sebagai anggota keluarga, // jika seorang anggota selain kepala keluarga dihapus dari keanggotaan, maka tidak ada pengaruh, cukup detach saja (V)
+4. wifes = suami dari istri-istrinya --> keluarga berencama, // jika suami dihapus, maka semua data pasangan dan keluarga berencana dihapus (V)
+5. husband = istri dari satu suaminya --> keluarga berencana,// jika istri dihapus, maka hanya hapus data pasangan tersebut dan keluarga berencana relate ke istri (V)
+6. pregnancies = ibu dari kandungan-kandungannya, -->--> puerperals dan prenatal_class nifas akibat kehamilan, // jika ibu dihapus, maka hapus semua data pregnancies dan puerperals yg terkait (V)
+7. childbirth = orang yang telah dilahirkan dari kehamilan, // jika org dihapus, childbrith tidak dihapus, cukup buat null pada person_id (V)
 8. posyandu = anggota dari posyandu balita, // jika orang dihapus, hapus juga data posyandu yang menyertainya
 
 
@@ -28,7 +28,7 @@ posyandu jika dihapus akan menghapus antropometris dan neonatuses (V)
 pregnancies jika soft delete akan menghapus prenatal_class, puerperal, puerperal_class, (V)
 pregnancy jika forcedelete maka akan menghapus juga  pregnancy_has_baby_condition, puerperal_has_*, (V)
 puerperal dihapus maka akan menghapus puerperal_class (V)
-saat couple restore, cek apakah istri punya pasangan atau tidak, cegah jika punya 
+saat couple restore, cek apakah istri punya pasangan atau tidak, cegah jika punya (V)
 saat family restore, cek apakah kepala keluarga menjadi anggota keluarga lainnya atau menjadi kepala keluarga lainnya. jika iya cegah (V)
 
-tambahkan withTrashed pada helper getDeleteData setelah semua fitur selesai/model use SoftDelete
+tambahkan withTrashed pada helper getDeleteData setelah semua fitur selesai/model use SoftDelete (V)
