@@ -19,4 +19,5 @@ User (K) menambahkan penduduk menjadi sebuah anggota seuatu keluarga // merelasi
 User (K) menghapus penduduk dari keanggotaan sebuah keluarga // merubah relasi penduduk pada relasi keluarga
 User (K) mengubah data dasar keluarga // mengganti kepala keluarga atau atribut lainnya
 User (K) menghapus sebuah keluarga // menghapus terhadap kemungkinan tidak digunakannya data atau perubahan menyeluruh terhadap keluarga
-User (K) menambahkan 
+User (K) menambahkan pasangan suami istri // merelasikan relasi antar individu dlm perkawinan
+
