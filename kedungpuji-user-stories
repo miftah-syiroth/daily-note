@@ -1,1 +1,22 @@
-
+User (Admin, Bidan, Kader) login menggunakan email. nomor hp, dan username // dapat login dengan akun dan hak akses berbeda secara aman
+User (A, B, K) merubah data login milik sendiri // mengubah data profil dan login untuk autentikasi sesuai kebutuhan pribadi
+User (A) membuat, mengubah dan menghapus akun dengan level bidan desa dan kader kesehatan // mengelola kebutuhan akun baru dan kesalahan login
+User  (B) membuat, mengubah dan menghapus akun dengan level kader kesehatan // bidan mengelola akun kader dibawahnya
+User (K) menambahkan data penduduk perorangan ke dalam sistem // mengelola data penduduk lebih lanjut
+User (K) melihat data penduduk secara perorangan // melihat detil penduduk
+User (K) melihat tampilan daftar semua penduduk desa kedungpuji // melihat secara keseluruhan data penduduk desa
+User (K) melakukan pencarian penduduk berdasarkan nama, jenis kelamin, alamat, dan status kawin // melihat data keseluruhan penduduk secara spesifik
+Use (K) mengubah data penduduk perorangan // memperbarui terhadap kemungkinan kesalahan dan perubahan
+User (K) menghapus data penduduk // menghapus terhadap kemungkinan tidak digunakannya data
+User (K) menambah kelahiran baru // menambahkan penduduk yang berasal dari kehamilan seorang ibu
+User (K) melihat tampilan daftar semua penduduk pindah atau mati // melihat dan melakukan perubahan terhadap kemungkinan update data
+User (K) mencari data penduduk pindah atau mati berdasarkan nama, jenis kelamin, alamat, dan tahun kematian // melihat daftar penduduk pindah atau mati secara spesifik
+User (K) menambahkan entitas keluarga baru // merelasikan antar penduduk berdasarkan keluarga
+User (K) melihat tampilan daftar semua keluarga di desa kedungpji // melihat secara keseluruhan data keluarga
+User (K) mencari data keluarga berdasarkan nomor kk, nama kepala keluarga, alamat kepala keluarga, dan status keluarga sejahtera
+User (K) melihat detil data keluarga // melihat secara detil satuan sebuah entitas keluarga
+User (K) menambahkan penduduk menjadi sebuah anggota seuatu keluarga // merelasikan penduduk dalam sebuah keluarga
+User (K) menghapus penduduk dari keanggotaan sebuah keluarga // merubah relasi penduduk pada relasi keluarga
+User (K) mengubah data dasar keluarga // mengganti kepala keluarga atau atribut lainnya
+User (K) menghapus sebuah keluarga // menghapus terhadap kemungkinan tidak digunakannya data atau perubahan menyeluruh terhadap keluarga
+User (K) menambahkan 
