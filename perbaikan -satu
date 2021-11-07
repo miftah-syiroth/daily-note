@@ -1,0 +1,3 @@
+1. softDelete terhadap keluarga akan mendetach all anggota, sehingga ketika restore perlu menambahkan anggota satu-persatu. hal ini supaya tidak perlu melakukan check apakah anggota tsb sudah menjadi enggota keluarga yg lain, krn anggotanya sangat banyak. cukup cek aja kepala keluarganya.
+2. restore keluarga akan sync tabel pivot sehingga kepala keluarga akan memiliki id 1 status KK. hal ini krn saat sofDel dilakukan detach all.
+3. 
