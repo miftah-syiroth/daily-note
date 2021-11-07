@@ -80,3 +80,19 @@ simbol: 1,2,n++ (relasi yang akan ditest), a,b,c (kombinasi dari case hapus dan 
         -> code diubah (V)
     * restore dgn leader forceDelete // family terhapus otomatis (V)
   c. forceDel family (V)
+    * dgn anggota yg terahpsu (V)
+5. relasi istri terhadap pasangan
+  a. softDel istri
+    * jika tidak punya data laporan kb (V)
+    * jika punya laporan kb (V)
+    * jika couple sudah softDeleted
+    * jika couple sudah forceDeleted
+  b. restore istri
+  c. forceDel istri
+6. relasi suami terhadap pasanagan-pasangannya
+  a. softDel suami
+    * jika tdiak punya data kb (V)
+    * jika punya data kb (V)
+    * jika couple sudah terhapus (V)
+    * jika couple sudah forceDeleted
+6. relasi 
