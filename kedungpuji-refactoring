@@ -47,3 +47,15 @@ simbol: 1,2,n++ (relasi yang akan ditest), a,b,c (kombinasi dari case hapus dan 
   c. forceDel ortu
     ?. kolom mother_id/father_id pada foreign_key akan null
     =. mother_id/father_id bernilai null (V)
+2. relasi person anggota terhadap family
+  a. softDel anggota
+    ?. person akan hilang pada ui anggota keluarga, baris pada tabel pivot tetap ada sehingga ketika restore tetep menjadi anggota tersebut
+    =. person hilang pada ui list anggota keluarga, baris pada tabel pivot tetap ada (V)
+  b. restore anggota
+    ?. person akan muncul sebagai anggota pada family sebelumnya
+    =. person muncul pada keluarga sebelumnya (V)
+  c. forceDel anggota
+    ?. baris pada tabel pivot akan hilang
+    =. baris hilang (V)
+  c. forceDel anggot
+3. relasi 
