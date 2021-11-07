@@ -74,5 +74,9 @@ simbol: 1,2,n++ (relasi yang akan ditest), a,b,c (kombinasi dari case hapus dan 
     =. keluarga hilang, anggota selain leader bisa membentuk keluarga baru, leader tidak bisa membuat keluarga karena validasi unique pada kolom leader_id anggota dapat join sebagai enggota keluarga lain (V).
   b. restore family
     * restore dgn anggota softDeleted (V)
-    * restore dgn anggota forceDeleted 
-  c. forceDel family
+    * restore dgn anggota forceDeleted (V)
+    * restore dgn kepala keluarga softDeleted
+      = error krn family menganggap kepala keluarga sudah ga ada
+        -> code diubah (V)
+    * restore dgn leader forceDelete // family terhapus otomatis (V)
+  c. forceDel family (V)
