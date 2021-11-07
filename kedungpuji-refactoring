@@ -35,7 +35,7 @@ tambahkan withTrashed pada helper getDeleteData setelah semua fitur selesai/mode
 
 
 DELETE CASE TESTING
-simbol: 1,2,n++ (relasi yang akan ditest), a,b,c (kombinasi dari case hapus dan relasi), ? (harapan), = (hasil), ->(perubahan)
+simbol: 1,2,n++ (relasi yang akan ditest), a,b,c (kombinasi dari case hapus dan relasi), ? (harapan), = (hasil), ->(perubahan karena hasil tidak sesuai harapan)
 
 1. relasi orang tua terhadap anak
   a. softDelete ayah/ibu
@@ -58,4 +58,21 @@ simbol: 1,2,n++ (relasi yang akan ditest), a,b,c (kombinasi dari case hapus dan 
     ?. baris pada tabel pivot akan hilang
     =. baris hilang (V)
   c. forceDel anggot
-3. relasi 
+3. relasi kepala keluarga terhadap keluarga
+  a. softDel leader
+    ?. keluarga akan softDeleted, baris semua anggota pada tabel pivot tetap ada supaya ketika restore tetap keluarga utuh
+    =. keluarga hilang pada ui, baris anggota pada tabel pivot tetap (V)
+  b. restore leader
+    ?. keluarga akan turut terestore secara utuh
+    =. restore keluarga utuh (V)
+  c. forceDel leader
+    ?. baris keluarga hilang pada table families, tabel pivot akan detach semua anggotanya
+    =. baris family hilang, family anggota detached pada tabel pivot (V)
+4. relasi keluarga terhadap leader dan anggota keluarga
+  a. softDel family
+    ?. keluarga akan hilang pada setiap anggota, anggota dpt membuat keluarga atau join sbg anggota keluarga yg lain
+    =. keluarga hilang, anggota selain leader bisa membentuk keluarga baru, leader tidak bisa membuat keluarga karena validasi unique pada kolom leader_id anggota dapat join sebagai enggota keluarga lain (V).
+  b. restore family
+    * restore dgn anggota softDeleted (V)
+    * restore dgn anggota forceDeleted 
+  c. forceDel family
