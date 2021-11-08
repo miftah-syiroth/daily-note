@@ -20,4 +20,15 @@ User (K) menghapus penduduk dari keanggotaan sebuah keluarga // merubah relasi p
 User (K) mengubah data dasar keluarga // mengganti kepala keluarga atau atribut lainnya
 User (K) menghapus sebuah keluarga // menghapus terhadap kemungkinan tidak digunakannya data atau perubahan menyeluruh terhadap keluarga
 User (K) menambahkan pasangan suami istri // merelasikan relasi antar individu dlm perkawinan
-
+User (K) mengakategorikan pasangan dlm keanggotaan KB saat menambahkan pasangan baru // pasangan memiliki status anggota KB atau bukan anggota KB
+User (K) mengubah keikutsertaan pasangan dalam KB // mengubah atribut pasangan
+User (K) menghapus/menceraikan pasangan // memperbarui relasi penduduk dalam pasangan
+User (K) memasukkan laporan KB bulanan setiap pasangan usia subur // mendata secara rutin status anggota kb dan non anggota kb
+User (K) mengubah data laporan KB bulanan setiap pasangan usia subur // mengubah data laporan terhadap kemungkinan kesalahan/pmebaruan
+User (K) melihat tampilan daftar semua ibu yang sedang mengandung atau nifas // melihat dan mengelola data ibu hamil dan nifas
+user (K) mencari daftar ibu hamil atau nifas berdasarkan nama ibu, rt, rw
+User (K) menambahkan kehamilan baru
+User (K) memasukkan data pelayanan kesehatan bulanan ibu hamil
+User (K) mengubah data pelyanan kesehatan bulanan ibu hamil
+User (K) memasukkan data akhir ringkasan pelayanan kesehatan ibu hamil
+User (K) menghapus 
