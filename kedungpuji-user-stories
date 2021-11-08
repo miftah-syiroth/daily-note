@@ -37,9 +37,11 @@ User (K) membuat kesimpulan pelayanan nifas // membuat ringkasan pelayanan nifas
 User (K) menghapus data kunjungan nifas seluruhnya // menghapus untuk kemungkinan tidak digunakannya data atau kesalahan
 User (K) melihat tampilan seluruh pasangan usia subur dan status KBnya // melihat data secara menyeluruh untuk dikelola
 User (K) melihat tampilan daftar seluruh balita yang ada // melihat data balita secara menyeluruh untuk dikelola
+User (K) mencari balita berdasarkan nama, alamat, jenis kelamin, tahun lahir, nama ibu, dan status keanggotaan posyandu. // melihat data balita secara spesifik
 User (K) menambahkan balita sebagai anggota posyandu balita // merelesaikan balita dengan data posyandu
 User (K) menginput data pelayanan kunjungan neonatus balita // memasukkan data pelayanan neonatal
 user (K) mengubah data pelayanan kunjungan neonatus yang telah diinput // merubah untuk kemungkinan kesalahan dan perubahan
 User (K) menginput data pelayanan antropometri balita hingga usia 60 bulan // memasukkan data pengukuran fisik balita setiap bulan
 User (K) mengubah data input pelayanan antropometri setiap bulan // mengubah data pengukuran untuk kemungkinan kesalahan atau perubahan
-User (K)
+User (K) melihat laporan kehamilan berdasarkan bulan hpht, tahun hpth, bulan kelahiran, tahun kelahiran, keadaan ibu, jenis kelamin bayi, kondisi bayi saat lahir dan alamat ibu.
+User (K) melihat laporan KB berdasarkan alamat, keanggotaan kb, sumber pelayanan kb, keluarga_sejahtera status
