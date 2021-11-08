@@ -1,3 +1,5 @@
+# USER STORIES DETAIL
+
 User (Admin, Bidan, Kader) login menggunakan email. nomor hp, dan username // dapat login dengan akun dan hak akses berbeda secara aman
 User (A, B, K) merubah data login milik sendiri // mengubah data profil dan login untuk autentikasi sesuai kebutuhan pribadi
 User (A) membuat, mengubah dan menghapus akun dengan level bidan desa dan kader kesehatan // mengelola kebutuhan akun baru dan kesalahan login
